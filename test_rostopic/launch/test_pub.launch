@@ -1,0 +1,10 @@
+<launch>
+    <arg name="topic_name" default="/test_topic2" />
+    <arg name="string" default="Bye" />
+    <node pkg="rostopic" type="rostopic" name="pub_node" output="screen" args="pub $(arg topic_name) std_msgs/String 'data: '$(arg string)'' " /> 
+</launch>
+
+
+
+
+
